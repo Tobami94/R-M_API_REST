@@ -1,0 +1,21 @@
+
+
+.containerSemi{
+	display: inline-block;
+	background-color: rgba(111, 207, 21, 0.171);
+	min-width: 27em;
+	max-width: 27em;
+	min-height: 40em;
+	margin: 15px;
+	border-radius: 14px;
+	margin-right: 50em;
+	height: auto;
+}
+
+.infoH1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+

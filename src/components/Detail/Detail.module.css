@@ -1,0 +1,40 @@
+
+
+.containerD {
+ background-color: red;
+}
+
+.boldTextChar {
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+    color: #fff;
+}
+
+.boldText {
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+    color: #fff;
+}
+
+.normalText { 
+	font-weight: normal;
+	font-size: 0.95rem;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.smallerText {
+	font-weight: normal;
+	font-size: 1em;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	line-height: 5px;
+}
