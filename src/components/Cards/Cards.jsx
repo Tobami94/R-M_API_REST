@@ -1,9 +1,10 @@
 import Card from "../Cards/Card";
 import styleCard from "./Cards.module.css";
 
-export default function Cards(props) {
-  const { characters } = props; 
 
+export default function Cards(props) {
+
+  const { characters } = props; 
 
    return <div className={styleCard.divCards}>
       {

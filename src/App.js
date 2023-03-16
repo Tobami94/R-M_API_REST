@@ -1,14 +1,20 @@
 import './App.css';
 import Cards from './components/Cards/Cards.jsx';
-import Nav from './components/NavBar/Nav.jsx';
 import About from './components/About/About.jsx';
 import Detail from './components/Detail/Detail.jsx'
 import Err404 from './components/Err404/Err404.jsx';
 import Form from './components/Forms/Form.jsx'
 import Header from './components/Header/Header.jsx'
+import Favorites from './components/Favorites/Favorites.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import NavBar from './components/NavBar/NavBar'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
+
 
 
 
@@ -16,12 +22,16 @@ import { useState } from 'react';
 
 function App () {
 
+  
 const [characters, setCharacters] = useState([]);
 
 /*Pasa los personajes mediante fetch y hace el chequeo de si el objeto tiene la informacion que necesitamos  */
 
   const onSearch = (character) => {
-    fetch(`https://rickandmortyapi.com/api/character/${character}`)
+    const URL_BASE = "https://be-a-rym.up.railway.app/api";
+    const API_KEY = "0c90a0a39f3e.173ad6fb5b39863238c8";
+
+    fetch(`${URL_BASE}/character/${character}?key=${API_KEY}`)
       .then((res) => res.json())
       .then((data) => { 
         console.log(data)
@@ -45,12 +55,14 @@ const [characters, setCharacters] = useState([]);
          setCharacters(filterCharc)
     }
 
+    //Renderizar <Nav /> solo si no esta en la ruta indicada */
+    const location = useLocation();
+    const isLoginPage = location.pathname === '/';
 
   return (
-    <div className='App' style={{ margin: "0px" }}>
-     
-      <Header />
-      <Nav onSearch={onSearch}  />
+    <div className='App' style={{ padding: '0px' }}>
+      {!isLoginPage && <Header />}
+      {!isLoginPage && <NavBar onSearch={onSearch}  />}
       <Routes>
         <Route path="/about" element={<About />}></Route>
         <Route path="/home" element={<Cards characters={characters} onClose={onClose} />}></Route>
@@ -58,9 +70,11 @@ const [characters, setCharacters] = useState([]);
         <Route path="/*" element={<Err404 />}></Route>
         <Route path="/" element={<Form />}></Route>
         <Route path="`/`" element={<Form />}></Route>
+        <Route path="/favorites" element={<Favorites />}></Route>
         </Routes>
+        <Footer />
       </div>
   )
 }
 
-export default App
+export default App;

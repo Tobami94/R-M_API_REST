@@ -1,6 +1,6 @@
 
 
-.containerSemi{
+.containerSemi {
 	display: inline-block;
 	background-color: rgba(111, 207, 21, 0.171);
 	min-width: 27em;
@@ -19,3 +19,20 @@
 	font-size: 25px;
 }
 
+.button {
+  transition-duration: 0.4s;
+  background-color: #1b8811;
+  color: rgb(125, 184, 133);
+  border: 2px solid #4CAF50; /* Green */
+  border-radius: 14px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: solid;
+  display: inline-block;
+  font-size: 16px;
+  }
+  
+  .button:hover {
+	background-color: #4CAF50; /* Green */
+	color: white;
+  }
