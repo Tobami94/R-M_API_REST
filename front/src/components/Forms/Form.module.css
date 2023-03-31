@@ -1,0 +1,126 @@
+.divBody {
+  display: flex;
+  margin: 5px;
+	text-align: center;	
+}
+
+
+
+.ContainerForm {
+  margin: 130px;
+  width: auto;
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+.Login {
+  margin: 60px 60px;
+  }
+
+
+  .picture img {
+    width: 450px;
+    height: 100%;
+    margin-left: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  
+  input[type="text"],
+  input[type="password"] {
+    height: 25px;
+    border: 1px solid rgba(236, 226, 226, 0.2);
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px;
+    width: 222px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+    background: rgb(36, 161, 11);
+  }
+  
+  button[type="submit"]:hover {
+    background: rgb(26, 110, 9);
+  }
+  
+  
+
+  .labelPass {
+    font-family: 'Arial';
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+  }
+
+  .labelEmail {
+    font-family: 'Arial';
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+ 
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .inputContainer {
+    display: block;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+
+  .h1{
+    margin: auto auto;
+}
+
+
+
+
+/* ver */
+
+
+.form {
+  background:  #ffffff; 
+  border-radius:  4px; 
+  box-shadow:  0px 2px 6px -1px rgba(0,0,0,.12);
+}
+.image img {
+  width: 220px;
+  height: auto;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.my-form {
+  padding: 2.5rem;
+}
+.my-form h4 {
+  color: #92aad0;
+}
+.my-form p {
+  font-size: .875rem;
+  font-weight: 400;
+}
