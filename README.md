@@ -5,3 +5,4 @@ Creada en Henry, con las herramientas y conocimientos aprendidos durante la curs
 
 - Redux, React, Express, node.js , JS, BD, CSS, HTML, Bootstrap 5. 
 
+![image](https://user-images.githubusercontent.com/94648542/229003992-23721bb6-5181-4e9c-9d63-e4db737193ea.png)
